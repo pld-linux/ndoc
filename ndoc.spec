@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/ndoc/%{name}-devel-v%{version}.zip
 URL:		http://ndoc.sourceforge.net/
 BuildRequires:	mono-csharp >= 1.1.4.20050221svn
 BuildRequires:	nant
+BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
