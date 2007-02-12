@@ -1,5 +1,5 @@
 Summary:	API documentation generation tool for .NET
-Summary(pl):	NarzÍdzie do generowania dokumentacji API dla .NET
+Summary(pl.UTF-8):   Narzƒôdzie do generowania dokumentacji API dla .NET
 Name:		ndoc
 Version:	1.3.1
 Release:	0.1
@@ -20,11 +20,11 @@ works with VB.NET and Nemerle. NDoc uses add-on documenters to
 generate documentation in several different formats, including
 MSDN-online style web pages.
 
-%description -l pl
+%description -l pl.UTF-8
 NDoc generuje dokumentacje bibliotek klas z assemblies .NET oraz
-plikÛw XML generowanych przez kompilator C# nad podstawie ºrÛde≥.
-Dzia≥a rÛwnieø z VB.NET oraz Nemerle. NDoc uøywa wtyczek do generacji
-dokumentacji w rÛønych formatach m.in. strony HTML w formacie
+plik√≥w XML generowanych przez kompilator C# nad podstawie ≈∫r√≥de≈Ç.
+Dzia≈Ça r√≥wnie≈º z VB.NET oraz Nemerle. NDoc u≈ºywa wtyczek do generacji
+dokumentacji w r√≥≈ºnych formatach m.in. strony HTML w formacie
 MSDN-online.
 
 %prep
