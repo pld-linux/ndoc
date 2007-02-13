@@ -1,5 +1,5 @@
 Summary:	API documentation generation tool for .NET
-Summary(pl.UTF-8):   Narzędzie do generowania dokumentacji API dla .NET
+Summary(pl.UTF-8):	Narzędzie do generowania dokumentacji API dla .NET
 Name:		ndoc
 Version:	1.3.1
 Release:	0.1
