@@ -7,6 +7,7 @@ License:	GPL v2+
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/ndoc/%{name}-devel-v%{version}.zip
 # Source0-md5:	8950a53dd3c379e41781ba7f1834e948
+Patch0:		%{name}-no-warnaserror.patch
 URL:		http://ndoc.sourceforge.net/
 BuildRequires:	mono-csharp >= 1.1.4.20050221svn
 BuildRequires:	nant
@@ -29,6 +30,7 @@ MSDN-online.
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %build
 nant -t:mono-1.0
