@@ -1,0 +1,36 @@
+diff -ruN ndoc-1.3.1./src/Documenter/LinearHtml/LinearHtml.build ndoc-1.3.1/src/Documenter/LinearHtml/LinearHtml.build
+--- ndoc-1.3.1./src/Documenter/LinearHtml/LinearHtml.build	2005-01-23 03:26:08.000000000 +0100
++++ ndoc-1.3.1/src/Documenter/LinearHtml/LinearHtml.build	2008-06-11 23:45:30.301971800 +0200
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" ?>
+ <project name="NDoc.Documenter.LinearHtml" default="compile">
+ 	<target name="compile">
+-		<csc target="library" warnaserror="true" output="${current.bin.dir}/${nant.project.name}.dll" debug="${current.build.debug}" optimize="${current.build.optimize}" unsafe="false" checked="false" define="${current.build.defines}" doc="${current.bin.dir}/${nant.project.name}.xml">
++		<csc target="library" output="${current.bin.dir}/${nant.project.name}.dll" debug="${current.build.debug}" optimize="${current.build.optimize}" unsafe="false" checked="false" define="${current.build.defines}" doc="${current.bin.dir}/${nant.project.name}.xml">
+ 			<nowarn>
+ 				<warning number="0618" unless="${framework::get-target-framework() == 'net-2.0'}" />
+ 			</nowarn>
+diff -ruN ndoc-1.3.1./src/Documenter/Msdn/Msdn.build ndoc-1.3.1/src/Documenter/Msdn/Msdn.build
+--- ndoc-1.3.1./src/Documenter/Msdn/Msdn.build	2005-01-23 03:29:04.000000000 +0100
++++ ndoc-1.3.1/src/Documenter/Msdn/Msdn.build	2008-06-11 23:45:47.661970240 +0200
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" ?>
+ <project name="NDoc.Documenter.Msdn" default="compile">
+ 	<target name="compile">
+-		<csc target="library" warnaserror="true" output="${current.bin.dir}/${nant.project.name}.dll" debug="${current.build.debug}" optimize="${current.build.optimize}" unsafe="false" checked="false" define="${current.build.defines}" doc="${current.bin.dir}/${nant.project.name}.xml">
++		<csc target="library" output="${current.bin.dir}/${nant.project.name}.dll" debug="${current.build.debug}" optimize="${current.build.optimize}" unsafe="false" checked="false" define="${current.build.defines}" doc="${current.bin.dir}/${nant.project.name}.xml">
+ 			<warnaserror>
+ 				<!-- do not treat obsolete warnings as error on .NET 2.0 -->
+ 				<exclude number="0618" if="${framework::get-target-framework() == 'net-2.0'}" />
+diff -ruN ndoc-1.3.1./src/Documenter/Msdn2/Msdn2.build ndoc-1.3.1/src/Documenter/Msdn2/Msdn2.build
+--- ndoc-1.3.1./src/Documenter/Msdn2/Msdn2.build	2005-01-23 03:31:36.000000000 +0100
++++ ndoc-1.3.1/src/Documenter/Msdn2/Msdn2.build	2008-06-11 23:45:54.381967080 +0200
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" ?>
+ <project name="NDoc.Documenter.Msdn2" default="compile">
+ 	<target name="compile">
+-		<csc target="library" warnaserror="true" output="${current.bin.dir}/${nant.project.name}.dll" debug="${current.build.debug}" optimize="${current.build.optimize}" unsafe="false" checked="false" define="${current.build.defines}" doc="${current.bin.dir}/${nant.project.name}.xml">
++		<csc target="library" output="${current.bin.dir}/${nant.project.name}.dll" debug="${current.build.debug}" optimize="${current.build.optimize}" unsafe="false" checked="false" define="${current.build.defines}" doc="${current.bin.dir}/${nant.project.name}.xml">
+ 			<warnaserror>
+ 				<!-- do not treat obsolete warnings as error on .NET 2.0 -->
+ 				<exclude number="0618" if="${framework::get-target-framework() == 'net-2.0'}" />
